@@ -1,0 +1,125 @@
+<!--
+File Name: template.html
+Student Name: Robin Kelley
+Course: Web Programming
+Date: 02/17/2026
+Description: This is a template HTML file for the portfolio website. It includes a header with navigation, a main content area with a hero section and content blocks, and a footer. The structure is designed to be responsive and accessible, following best practices for web development.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio website for Robin Kelley, aspiring Computer Science educator and Programming I Teaching Assistant." />
+    <title>Template | Robin Kelley Portfolio</title>
+
+    <!-- Google Font (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <!-- Skip link for accessibility (Best Practice for Keyboard Navigation) -->
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Go to Home">
+                <span class="brand-name">Robin Kelley</span>
+                <span class="brand-tag">Aspiring CS Educator</span>
+            </a>
+            <nav class="nav" aria-label="Primary Navigation">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+                Menu
+                </button>
+                <ul id="nav-list" class="nav-list">
+                <!-- Add class="active" to the page you're on -->
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="teaching.html" class="nav-link">Teaching Experience</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Page hero / title -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Page Title</h1>
+                <p class="page-subtitle">
+                Short subtitle describing the purpose of this page.
+                </p>
+            </div>
+        </section>
+
+        <!-- Main content area -->
+        <section class="page-content">
+            <div class="container">
+                <!-- Example content blocks you can reuse -->
+                <article class="card">
+                    <h2 class="card-title">Section Heading</h2>
+                    <p>
+                        Replace this content with your page’s information. Keep paragraphs short and use headings for clarity.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h2 class="card-title">Another Section</h2>
+                    <ul class="clean-list">
+                        <li>Bullet point example</li>
+                        <li>Bullet point example</li>
+                        <li>Bullet point example</li>
+                    </ul>
+                </article>
+
+                <!-- Optional: grid area for projects/skills -->
+                <section class="grid">
+                    <article class="card">
+                        <h3 class="card-title">Grid Item</h3>
+                        <p>Use this layout for projects, skills, or highlights.</p>
+                        <a class="button" href="#" aria-label="Example link">Learn More</a>
+                    </article>
+
+                    <article class="card">
+                        <h3 class="card-title">Grid Item</h3>
+                        <p>Duplicate and edit these cards as needed.</p>
+                        <a class="button" href="#" aria-label="Example link">Learn More</a>
+                    </article>
+
+                    <article class="card">
+                        <h3 class="card-title">Grid Item</h3>
+                        <p>Keep descriptions short and consistent.</p>
+                        <a class="button" href="#" aria-label="Example link">Learn More</a>
+                    </article>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="footer-text">
+                &copy; <span id="year"></span> Robin Kelley • Aspiring Computer Science Educator
+            </p>
+            <p class="footer-links">
+                <a href="contact.html">Contact</a>
+                <span aria-hidden="true">•</span>
+                <a href="resume.html">Resume</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

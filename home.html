@@ -1,0 +1,122 @@
+<!--
+File Name: template.html
+Student Name: Robin Kelley
+Course: Web Programming
+Date: 02/17/2026
+Description: Home Page with introduction and navigation to other pages.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio website for Robin Kelley, aspiring Computer Science educator and Programming I Teaching Assistant." />
+    <title>Home | Robin Kelley Portfolio</title>
+
+    <!-- Google Font (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <!-- Skip link for accessibility (Best Practice for Keyboard Navigation) -->
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Go to Home">
+                <span class="brand-name">Robin Kelley</span>
+                <span class="brand-tag">Aspiring CS Educator</span>
+            </a>
+            <nav class="nav" aria-label="Primary Navigation">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+                Menu
+                </button>
+                <ul id="nav-list" class="nav-list">
+                <!-- Add class="active" to the page you're on -->
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="teaching.html" class="nav-link">Teaching Experience</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+    <!-- Hero Section with Image + Intro -->
+    <section class="hero">
+        <div class="container hero-inner">
+
+            <div class="hero-text">
+                <h1>Hi, I'm Robin Kelley</h1>
+                <p class="hero-tagline">
+                    Computer Science Educator • Teaching Assistant • Lifelong Learner
+                </p>
+
+                <p class="hero-description">
+                    I am a high school Computer Science teacher and Programming I Teaching Assistant 
+                    passionate about making technology accessible and engaging for all learners. 
+                    As a first-generation college student and mother of two, I understand the power 
+                    of education to transform lives.
+                </p>
+
+                <a href="about.html" class="button">Learn More About Me</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/Robin_home_800.png" alt="Robin Kelley portrait">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights">
+        <div class="container grid">
+
+            <article class="card">
+                <h2 class="card-title">Teaching</h2>
+                <p>High school Computer Science instructor focused on hands-on learning and problem solving.</p>
+            </article>
+
+            <article class="card">
+                <h2 class="card-title">Technical Skills</h2>
+                <p>Experience with C++, JavaScript, Python, SQL, Web Development, and Data Analysis.</p>
+            </article>
+
+            <article class="card">
+                <h2 class="card-title">Academic Excellence</h2>
+                <p>Maintaining a 4.0 GPA while balancing family, career, and education.</p>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="footer-text">
+                &copy; <span id="year"></span> Robin Kelley • Aspiring Computer Science Educator
+            </p>
+            <p class="footer-links">
+                <a href="contact.html">Contact</a>
+                <span aria-hidden="true">•</span>
+                <a href="resume.html">Resume</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
